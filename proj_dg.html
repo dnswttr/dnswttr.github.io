@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>proj1 - Space Science Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+ <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+                <ul id="navigation">
+                    <li class="menu">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="menu">
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li class="menu">
+                        <a href="publications.html">Publications</a>
+                    </li>
+                    <li class="menu">
+                        <a href="talks.html">Talks</a>
+                    </li>
+                </ul>
+
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>Discontinuous Galerking Methods</h1>
+					<img src="images/bg_dg.png" alt="">
+					<p> Differential equations have always been a main component in describing physical observations. Yet not all differential equations can be solved analytically and one has to turn to numerical solutions. There is a variaty of numerical schemes to find the solutions for such equations. One family of schemes are the so called Galerkin schemes that are based on the Galerkin Orthogonality that was developed by the russian mathematician Boris Grigorjewitsch Galjorkin. For my Bachelor- and Master-thesis, I worked on the so called Discontinuous Galerkin-Finite Element Methods (DGFEM) that was introduce by Reed and Hill in 1973 </p>
+
+					<h2>1-dimensional Discontinuous Galerkin Methods</h2>
+ 					<p> For my Bachelor thesis, I compared the DGFEM to Central-Weighted-Essentially-Non-Oscillatory (CWENO) scheme, a member of the finite volume methods. I used both schemes to solve the 1D Afvection and 1D-Burgers Equation using different initial conditions. I found that the DGFEM is converting faster for smooth solutions. On the other hand around discontinuouties, the DGFEM shows a strong oscialltory behaviour which can be controlled by applying filter or slope limiters  </p>
+
+					<h2>2-dimensional Discontinuous Galerkin Methods</h2>
+					<p> In the scope of my Master thesis, I wrote a 2-dimenstional DGFEM code that solves for various hyperbolical equations on a cartesian grid. The code also uses adaptive mesh refinement to improve the solution locally but, at the same time, to keep the computational costs low. The code is able to solve: first order conversation laws, the viscid Burgers equation, the Euler equations and the compressible Navier-Stokes equations.  </p>
+				</div>
+			</div>
+		</div>
+  <div id="footer">
+            <div class="footnote">
+                <div>
+					<p>&copy; 2023 BY SPACE PROSPECTION | ALL RIGHTS RESERVED | Template from <a href="http://freewebsitetemplates.com/">http://freewebsitetemplates.com</a> modified by myself </p>
+                </div>
+            </div>
+        </div>
+	</div>
+</body>
+</html>
